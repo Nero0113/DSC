@@ -1,0 +1,61 @@
+{
+  "architecture": "InceptionTemporalNet",
+  "parameters": 41043,
+  "fixed_hyperparameters": {
+    "data": "/Users/lidong/Desktop/code/test/car/data/uah_3class",
+    "out": "luna_temporal_classifier/runs/inception_final_d1_d5_seed2026",
+    "epochs": 3,
+    "batch_size": 128,
+    "width": 48,
+    "dropout": 0.15,
+    "lr": 0.002,
+    "weight_decay": 0.0001,
+    "seed": 2026,
+    "clip": 12.0
+  },
+  "selection_contract": "D1-D4 train, D5 selected architecture and epoch=3; D1-D5 final fit; D6 one-shot test",
+  "test": {
+    "accuracy": 0.6180790960451977,
+    "macro_f1": 0.6346229663067225,
+    "confusion_matrix_rows_true": [
+      [
+        179,
+        25,
+        150
+      ],
+      [
+        20,
+        121,
+        38
+      ],
+      [
+        96,
+        9,
+        247
+      ]
+    ],
+    "per_class": [
+      {
+        "class": "NORMAL",
+        "support": 354,
+        "precision": 0.6067796610169491,
+        "recall": 0.5056497175141242,
+        "f1": 0.551617873651772
+      },
+      {
+        "class": "AGGRESSIVE",
+        "support": 179,
+        "precision": 0.7806451612903226,
+        "recall": 0.6759776536312849,
+        "f1": 0.7245508982035929
+      },
+      {
+        "class": "DROWSY",
+        "support": 352,
+        "precision": 0.5678160919540229,
+        "recall": 0.7017045454545454,
+        "f1": 0.627700127064803
+      }
+    ]
+  }
+}

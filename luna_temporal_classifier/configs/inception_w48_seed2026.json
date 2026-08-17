@@ -1,0 +1,14 @@
+{
+  "model": "inception",
+  "width": 48,
+  "epochs": 60,
+  "patience": 15,
+  "batch_size": 256,
+  "learning_rate": 0.002,
+  "weight_decay": 0.0001,
+  "clip": 12.0,
+  "augmentation": true,
+  "seed": 2026,
+  "selection_metric": "D5 macro_f1",
+  "test_policy": "D6 used once for independent reporting"
+}

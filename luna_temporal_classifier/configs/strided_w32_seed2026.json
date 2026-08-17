@@ -1,0 +1,14 @@
+{
+  "model": "strided",
+  "width": 32,
+  "epochs": 100,
+  "patience": 20,
+  "batch_size": 512,
+  "learning_rate": 0.003,
+  "weight_decay": 0.0001,
+  "clip": 12.0,
+  "augmentation": true,
+  "seed": 2026,
+  "selection_metric": "D5 macro_f1",
+  "test_policy": "D6 used once for independent reporting"
+}

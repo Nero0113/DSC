@@ -1,0 +1,13 @@
+{
+  "architecture": "InceptionTemporalNet",
+  "width": 48,
+  "dropout": 0.15,
+  "batch_size": 128,
+  "epochs": 3,
+  "learning_rate": 0.002,
+  "weight_decay": 0.0001,
+  "clip": 12.0,
+  "seed": 2026,
+  "training_data": "D1-D5 combined after D5 selected architecture and epoch count",
+  "test_policy": "D6 evaluated once after final training"
+}

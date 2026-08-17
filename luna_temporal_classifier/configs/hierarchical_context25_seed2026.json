@@ -1,0 +1,18 @@
+{
+  "architecture": "frozen Inception1D + HierarchicalCausalTCN",
+  "past_context_windows": 25,
+  "approximate_context_seconds": 140,
+  "context_width": 64,
+  "dilations": [1, 2, 4, 8],
+  "dropout": 0.3,
+  "batch_size": 256,
+  "epochs": 60,
+  "optimizer": "AdamW",
+  "learning_rate": 0.001,
+  "weight_decay": 0.001,
+  "patience": 10,
+  "seed": 2026,
+  "encoder": "frozen inception_w48_seed2026/best_model.pt",
+  "selection_metric": "D5 macro_f1",
+  "test_policy": "D6 not evaluated"
+}

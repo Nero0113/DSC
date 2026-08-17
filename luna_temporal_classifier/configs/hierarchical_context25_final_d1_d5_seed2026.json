@@ -1,0 +1,13 @@
+{
+  "architecture": "frozen Inception1D + HierarchicalCausalTCN",
+  "encoder_checkpoint": "runs/inception_final_d1_d5_seed2026/final_model.pt",
+  "context_windows": 25,
+  "epochs": 20,
+  "batch_size": 256,
+  "optimizer": "AdamW",
+  "learning_rate": 0.001,
+  "weight_decay": 0.001,
+  "seed": 2026,
+  "training_data": "D1-D5 combined after D5 selected context and epoch count",
+  "test_policy": "D6 evaluated once after all 20 epochs"
+}

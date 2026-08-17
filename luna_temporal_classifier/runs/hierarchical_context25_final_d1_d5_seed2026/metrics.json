@@ -1,0 +1,60 @@
+{
+  "architecture": "frozen Inception1D + HierarchicalCausalTCN",
+  "parameters_context": 66435,
+  "fixed_hyperparameters": {
+    "data": "/Users/lidong/Desktop/code/test/car/data/uah_3class",
+    "encoder_checkpoint": "luna_temporal_classifier/runs/inception_final_d1_d5_seed2026/final_model.pt",
+    "out": "luna_temporal_classifier/runs/hierarchical_context25_final_d1_d5_seed2026",
+    "context": 25,
+    "epochs": 20,
+    "batch_size": 256,
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "seed": 2026
+  },
+  "selection_contract": "D5 selected context=25 and epoch=20; D1-D5 final fit; D6 one-shot test",
+  "test": {
+    "accuracy": 0.7502824858757062,
+    "macro_f1": 0.7737565896436186,
+    "confusion_matrix_rows_true": [
+      [
+        232,
+        0,
+        122
+      ],
+      [
+        37,
+        142,
+        0
+      ],
+      [
+        62,
+        0,
+        290
+      ]
+    ],
+    "per_class": [
+      {
+        "class": "NORMAL",
+        "support": 354,
+        "precision": 0.7009063444108762,
+        "recall": 0.655367231638418,
+        "f1": 0.6773722627737225
+      },
+      {
+        "class": "AGGRESSIVE",
+        "support": 179,
+        "precision": 1.0,
+        "recall": 0.7932960893854749,
+        "f1": 0.8847352024922119
+      },
+      {
+        "class": "DROWSY",
+        "support": 352,
+        "precision": 0.7038834951456311,
+        "recall": 0.8238636363636364,
+        "f1": 0.7591623036649214
+      }
+    ]
+  }
+}
