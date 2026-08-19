@@ -1,0 +1,103 @@
+{
+  "architecture": "MultiScalePrefixTCN",
+  "seed": 2027,
+  "parameters": 144233,
+  "best_epoch": 24,
+  "validation": {
+    "accuracy": 0.7082125603864734,
+    "macro_f1": 0.6445931134638602,
+    "confusion_matrix_rows_true": [
+      [
+        437,
+        0,
+        10
+      ],
+      [
+        0,
+        222,
+        15
+      ],
+      [
+        154,
+        123,
+        74
+      ]
+    ],
+    "per_class": [
+      {
+        "class": "NORMAL",
+        "support": 447,
+        "precision": 0.739424703891709,
+        "recall": 0.9776286353467561,
+        "f1": 0.8420038535645472
+      },
+      {
+        "class": "AGGRESSIVE",
+        "support": 237,
+        "precision": 0.6434782608695652,
+        "recall": 0.9367088607594937,
+        "f1": 0.7628865979381443
+      },
+      {
+        "class": "DROWSY",
+        "support": 351,
+        "precision": 0.7474747474747475,
+        "recall": 0.21082621082621084,
+        "f1": 0.32888888888888895
+      }
+    ]
+  },
+  "per_trip_accuracy": [
+    {
+      "trip": "20151209151242-25km-D5-NORMAL-MOTORWAY",
+      "correct": 172,
+      "windows": 180,
+      "accuracy": 0.9555555555555556
+    },
+    {
+      "trip": "20151209153137-25km-D5-AGGRESSIVE-MOTORWAY",
+      "correct": 140,
+      "windows": 155,
+      "accuracy": 0.9032258064516129
+    },
+    {
+      "trip": "20151211160213-25km-D5-DROWSY-MOTORWAY",
+      "correct": 0,
+      "windows": 215,
+      "accuracy": 0.0
+    },
+    {
+      "trip": "20151211162829-16km-D5-NORMAL1-SECONDARY",
+      "correct": 132,
+      "windows": 134,
+      "accuracy": 0.9850746268656716
+    },
+    {
+      "trip": "20151211164124-17km-D5-NORMAL2-SECONDARY",
+      "correct": 133,
+      "windows": 133,
+      "accuracy": 1.0
+    },
+    {
+      "trip": "20151211165606-12km-D5-AGGRESSIVE-SECONDARY",
+      "correct": 82,
+      "windows": 82,
+      "accuracy": 1.0
+    },
+    {
+      "trip": "20151211170502-16km-D5-DROWSY-SECONDARY",
+      "correct": 74,
+      "windows": 136,
+      "accuracy": 0.5441176470588235
+    }
+  ],
+  "test_evaluated": false,
+  "baseline": {
+    "accuracy": 0.71401,
+    "macro_f1": 0.681006
+  },
+  "delta_vs_baseline": {
+    "accuracy": -0.005797439613526634,
+    "macro_f1": -0.03641288653613983
+  }
+}
