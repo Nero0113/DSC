@@ -1,0 +1,5 @@
+# Run conversion on an x86-64 Linux host when possible. Match the NXP BSP's
+# TensorFlow Lite version if your BSP is older or newer than LF6.18.20_2.0.0.
+numpy==2.0.2
+torch==2.8.0
+tensorflow==2.19.0

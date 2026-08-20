@@ -11,6 +11,7 @@
 - `train_rad_tcn.py`：RAD-TCN 训练、EMA、辅助任务和完整断点续训
 - `context_tcn.py` / `train_context_tcn.py`：冻结窗口编码器的同 trip 因果上下文验证
 - `final_fit_inception.py` / `final_fit_context.py`：选型完成后的 D1–D5 固定轮数 final-fit
+- `deploy_imx93/`：INT8 TFLite 量化、NXP Vela 编译和 Ethos-U65 流式推理
 - `configs/`：可复现命令对应的 JSON 配置
 - `RESULTS.md`：已完成实验、混淆矩阵和限制
 - `DATA_AUDIT.md`：数据结构、分组和泄漏检查
